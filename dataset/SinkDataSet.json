@@ -1,0 +1,19 @@
+{
+	"name": "SinkDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SinkDataLakeStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "target"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
