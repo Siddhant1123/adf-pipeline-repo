@@ -1,0 +1,9 @@
+{
+	"name": "factoryQAdata",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1edf80d0-56c4-420a-8cb2-51a40d85b43c",
+		"tenantId": "84bc1fd2-8410-4bf4-ba5c-a0fd00d45deb"
+	}
+}
