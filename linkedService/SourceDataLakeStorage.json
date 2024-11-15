@@ -2,11 +2,16 @@
 	"name": "SourceDataLakeStorage",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
+		"parameters": {
+			"storage_act": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzureBlobFS",
 		"typeProperties": {
-			"url": "https://storagedevact.dfs.core.windows.net/",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDNFMDJDNkRGLTY0REMtNDAxNC1BQzcxLUZBODFDMURFQjM1NF84YzBkOWFkZC00ZmY2LTQ4MjgtYjk4My0zN2FiMDZiZjYwOWUiDQp9"
+			"url": "@{linkedService().storage_act}",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDAyMDlCNTdBLTc5ODQtNEU5Mi1CNDM0LTZGOEM5Q0REMkEwRV81NTMxMmQyZS0yNzNkLTRjOTctYjAwNi0yYTc1YWNiY2VhYTMiDQp9"
 		}
 	}
 }
