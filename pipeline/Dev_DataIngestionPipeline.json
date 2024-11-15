@@ -48,7 +48,13 @@
 				"inputs": [
 					{
 						"referenceName": "SoruceDataSet",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"file_source": {
+								"value": "@pipeline().parameters.file_parameter",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
@@ -59,6 +65,11 @@
 				]
 			}
 		],
+		"parameters": {
+			"file_parameter": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }

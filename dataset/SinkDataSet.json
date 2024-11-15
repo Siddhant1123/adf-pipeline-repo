@@ -3,7 +3,10 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "SinkDataLakeStorage",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"storage_act": "https://storageqaact.dfs.core.windows.net/"
+			}
 		},
 		"annotations": [],
 		"type": "Parquet",
